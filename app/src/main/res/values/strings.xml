@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EPower</string>
+    <string name="Usage_Stats">usagestats</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_one">Добро пожаловать в EPower. Для корректной работы приложения - вам потребуется дать все необходимые разрешения</string>
+    <string name="hello_givePermissions">Предоставить разрешения</string>
+    <string name="hello_three_btn">Продолжить</string>
+</resources>
