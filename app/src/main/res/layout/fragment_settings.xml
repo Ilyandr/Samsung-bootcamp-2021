@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:id="@+id/main_linearSettings"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnBack"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:background="@color/prism"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/main_textSettings"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingRight="15dp"
+            android:background="@color/prism"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:id="@+id/separator"
+        android:background="@color/white"
+        tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:id="@+id/btn_themeApp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/prism"
+                android:textColor="@color/gray"
+                android:text="@string/text_themeApp"
+                android:textSize="13sp"
+                android:gravity="center"
+                tools:ignore="NestedWeights" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="0dp"
+                android:id="@+id/switch_themeApp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15sp"
+                android:layout_weight="1"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btn_controlAdmin"
+            android:background="@color/prism"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textColor="@color/gray"
+            android:text="@string/text_controlAdmin"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btn_clearDataApp"
+            android:textSize="13sp"
+            android:background="@color/prism"
+            android:textColor="@color/gray"
+            android:text="@string/text_clearDataApp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"/>
+    </LinearLayout>
+</LinearLayout>
